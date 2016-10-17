@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var helloLabel: UILabel!
-
+    @IBOutlet var nameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,7 +36,7 @@ class ViewController: UIViewController {
         
         present(alertController, animated: true, completion: nil)*/
         
-        helloLabel.text = "Hola, ¿cómo estás?";
+        helloLabel.text = "Hola, \(nameTextField.text!) ¿cómo estás?";
         
     }
 
