@@ -22,6 +22,15 @@ class ViewController: UIViewController {
 
     @IBAction func buttonPressed(_ sender: UIButton) {
         
+        let alertController : UIAlertController = UIAlertController(title: "Hola me has pulsado",
+                                                                    message: "¡Hemos pulsado el botón de pantalla!",
+                                                                    preferredStyle: .alert)
+        
+        let okAction : UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        
+        present(alertController, animated: true, completion: nil)
+        
     }
 
 }
